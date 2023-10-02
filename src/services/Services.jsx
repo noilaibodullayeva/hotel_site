@@ -66,7 +66,7 @@ function Services() {
                     </CardActions>
                 </Card>
             </Box>
-            <Box sx={{ display: 'flex', flexDirection: 'row', gap: '10px', margin: '30px 0 30px 150px' }}>
+            <Box sx={{ display: 'flex', flexDirection: 'row', gap: '10px', margin: '30px 0 0 150px' }}>
                 <Button variant="contained" sx={styles.button1} disabled>
                     Prev
                 </Button>
@@ -90,7 +90,7 @@ const styles = {
             md: 'column', xs: 'column',
 
         },
-        m: {md: '40px 0 20px 0', xs: '200px 20px 20px 0'}
+        m: {md: '40px 0 0 0', xs: '200px 20px 20px 0'}
     },
     serviceword: {
         fontSize: '25px',
