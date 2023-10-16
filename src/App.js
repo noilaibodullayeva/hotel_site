@@ -6,6 +6,8 @@ import Services from './services/Services';
 import AboutHotel from './aboutHotel/AboutHotel';
 import Blogposts from './blog/Blogposts';
 import Testimonials from './testimonials/Testimonials';
+import Instagram from './instagram/Instagram';
+import Footer from './footer/Footer';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       <AboutHotel />
       <Blogposts/>
       <Testimonials/>
+      <Instagram/>
+      <Footer/>
     </Box>
   );
 }

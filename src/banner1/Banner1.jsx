@@ -13,26 +13,24 @@ function Banner1() {
                 <Button sx={styles.button1} href="https://youtu.be/zr4r3n5Smho?si=wi0bftK3FeK4w0AB">See video</Button>
             </Box>
             <Box sx={styles.inputsBox}>
-                <Input 
-                id="input-with-icon-adornment"
+                <Input id="input-with-icon-adornment"
                     endAdornment={
                         <InputAdornment position="end">
                             <CalendarMonthIcon />
                         </InputAdornment>
                     }
                     placeholder="Date Arrival"
-sx={{
-    border: '1px solid #D9D9DB',
-    width: '370px',
-    height: '50px',
-    borderRadius: '15px',
-    background: '#D9D9DB',
-    padding: '5px',
-    fontWeight: 500
-}}
+                    sx={{
+                        border: '1px solid #D9D9DB',
+                        width: '370px',
+                        height: '50px',
+                        borderRadius: '25px',
+                        background: '#D9D9DB',
+                        padding: '5px',
+                        fontWeight: 500
+                    }}
                 />
-                <Input
-                 id="input-with-icon-adornment"
+                <Input id="input-with-icon-adornment"
                     endAdornment={
                         <InputAdornment position="end">
                             <CalendarMonthIcon />
@@ -43,7 +41,7 @@ sx={{
                         border: '1px solid #D9D9DB',
                         width: '370px',
                         height: '50px',
-                        borderRadius: '15px',
+                        borderRadius: '25px',
                         background: '#D9D9DB',
                         padding: '5px',
                         fontWeight: 500
@@ -60,11 +58,11 @@ sx={{
                         border: '1px solid #D9D9DB',
                         width: '370px',
                         height: '50px',
-                        borderRadius: '15px',
+                        borderRadius: '25px',
                         background: '#D9D9DB',
                         padding: '5px',
                         fontWeight: 500,
-                        borderBottom : 'none'
+                        borderBottom: 'none'
                     }}
                 />
                 <Button sx={styles.button2}>Find now</Button>
@@ -85,23 +83,24 @@ const styles = {
         height: '700px',
         backgroundSize: "cover",
         marginTop: 0,
-        backgroundPositionY: 1
+        backgroundPositionY: 1,
+        justifyContent: 'center'
     },
     words: {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         textAlign: 'center',
-        mt: {md: '20%', xs: '50%'},
+        mt: { md: '20%', xs: '50%' },
     },
     once: {
-        fontSize: {md: '50px', xs: '30px'},
+        fontSize: { md: '50px', xs: '30px' },
         fontFamily: 'Trebuchet MS',
         fontWeight: 900,
         color: '#fff',
-        width: {md: '880px', xs: '350px'},
-        textAlign: {xs: 'center', md: 'center'},
-        ml: {xs: '15px'}
+        width: { md: '880px', xs: '350px' },
+        textAlign: { xs: 'center', md: 'center' },
+        ml: { xs: '15px' }
     },
     button1: {
         background: '#1C917C',
@@ -116,17 +115,19 @@ const styles = {
         },
         color: '#fff',
         fontSize: '10px',
-        ml: {xs: '30px'}
+        ml: { xs: '30px' }
     },
     inputsBox: {
         display: 'flex',
-        flexDirection: {xs: 'column', md: 'row'},
+        flexDirection: { xs: 'column', md: 'row' },
         gap: 2,
-        m: {md: '165px 90px 0 90px', xs: '150px 20px 30px 40px'},
-        background:'#fff',
-        width: {md: '1200px', xs: '380px'},
-        height: '200px',
-        padding: {md:'30px', xs: '30px'}
+        m: { md: '205px 90px 0 90px', xs: '150px 20px 30px 40px' },
+        justifyContent: 'center',
+        background: '#fff',
+        width: { md: '1200px', xs: '380px' },
+        height: '50px',
+        padding: { md: '30px', xs: '30px' },
+        boxShadow: '5px 10px 5px 5px #eee'
     },
     button2: {
         background: '#1C917C',

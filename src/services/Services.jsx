@@ -11,9 +11,9 @@ function Services() {
                 OUR SERVICES
             </Typography>
             <Box sx={styles.boxCards}>
-                <Card sx={{ maxWidth: 420, boxShadow: '10px 5px 5px 5px #eee '}}>
+                <Card sx={{ maxWidth:{md: 420, xs: '100%'}, boxShadow: '10px 5px 5px 5px #eee ' }}>
                     <CardActionArea>
-                        <NordicWalkingIcon  sx={styles.icon} />
+                        <NordicWalkingIcon sx={styles.icon} />
                         <CardContent>
                             <Typography gutterBottom variant="h6" component="div" fontWeight='900'>
                                 Trekking
@@ -24,14 +24,14 @@ function Services() {
                         </CardContent>
                     </CardActionArea>
                     <CardActions>
-                        <Button size="small" sx={{color: "#B4B4B4"}}>
+                        <Button size="small" sx={{ color: "#B4B4B4" }}>
                             Learn more
                         </Button>
                     </CardActions>
                 </Card>
-                <Card sx={{ maxWidth: 420, boxShadow: '10px 5px 5px 5px #eee ' }}>
+                <Card sx={{ maxWidth:{md: 420, xs: '100%'}, boxShadow: '10px 5px 5px 5px #eee ' }}>
                     <CardActionArea>
-                        <MapIcon   sx={styles.icon}  />
+                        <MapIcon sx={styles.icon} />
                         <CardContent>
                             <Typography gutterBottom variant="h6" component="div" fontWeight='900'>
                                 The map
@@ -42,14 +42,14 @@ function Services() {
                         </CardContent>
                     </CardActionArea>
                     <CardActions>
-                        <Button size="small" sx={{color: "#B4B4B4"}}>
+                        <Button size="small" sx={{ color: "#B4B4B4" }}>
                             Learn more
                         </Button>
                     </CardActions>
                 </Card>
-                <Card sx={{ maxWidth: 420, boxShadow: '10px 5px 5px 5px #eee ' }}>
+                <Card sx={{ maxWidth:{md: 420, xs: '100%'}, boxShadow: '10px 5px 5px 5px #eee ' }}>
                     <CardActionArea>
-                        <WorkIcon  sx={styles.icon} />
+                        <WorkIcon sx={styles.icon} />
                         <CardContent>
                             <Typography gutterBottom variant="h6" component="div" fontWeight='900'>
                                 Suitcase
@@ -60,13 +60,13 @@ function Services() {
                         </CardContent>
                     </CardActionArea>
                     <CardActions>
-                        <Button size="small" sx={{color: "#B4B4B4"}}>
+                        <Button size="small" sx={{ color: "#B4B4B4" }}>
                             Learn more
                         </Button>
                     </CardActions>
                 </Card>
             </Box>
-            <Box sx={{ display: 'flex', flexDirection: 'row', gap: '10px', margin: '30px 0 0 150px' }}>
+            <Box sx={{ display: 'flex', flexDirection: 'row', gap: '10px', justifyContent: {md: 'left', xs: 'center'}, m: {md: '30px 0 20px 150px', xs: '20px 0'} }}>
                 <Button variant="contained" sx={styles.button1} disabled>
                     Prev
                 </Button>
@@ -90,26 +90,26 @@ const styles = {
             md: 'column', xs: 'column',
 
         },
-        m: {md: '40px 0 0 0', xs: '200px 20px 20px 0'}
+        m: { md: '40px 0 0 0', xs: '200px 20px 20px 0' }
     },
     serviceword: {
         fontSize: '25px',
         fontFamily: 'monoscape',
         fontWeight: 900,
         color: '#1C917C',
-        margin: { md: '40px 0 40px 150px', xs: '30px 0 10px 30px' },
+        margin: { md: '40px 0 20px 10%', xs: '30px 0 10px 30px' },
     },
     button1: {
         width: '60px',
         height: '30px',
-        border: '1px solid #8C8C8C',
+        border: '1px solid #eeeeee',
         background: 'transparent',
         ':hover': {
-            border: '1px solid #8C8C8C',
+            border: '1px solid #eeeeee',
             background: 'transparent',
         },
         color: 'grey',
-        borderRadius: '10px',
+        borderRadius: '20px',
         fontSize: '10px'
     },
     icon: {
@@ -119,9 +119,10 @@ const styles = {
         m: '3% 0 3% 35%'
     },
     boxCards: {
-        display: 'flex', 
-        flexDirection: {md: 'row', xs: 'column'}, 
-        gap: '20px', 
-        ml: {md: '90px', xs: '12%'}
+        display: 'flex',
+        flexDirection: { md: 'row', xs: 'column' },
+        gap: '20px',
+        mb: '2%',
+        justifyContent:'center'
     }
 }

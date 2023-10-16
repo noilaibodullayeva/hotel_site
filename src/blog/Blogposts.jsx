@@ -143,7 +143,7 @@ const styles = {
         flexDirection: 'column',
         justifyContent: 'space-between',
         gap: '10px',
-        mt: {xs: '200px'}
+        mt: {xs: '200px', md:'0'}
     },
     blogWord: {
         fontSize: '25px',
@@ -155,9 +155,9 @@ const styles = {
     cardsPosts: {
         display: 'flex',
         flexDirection: { md: 'row', xs: 'column' },
-        justifyContent: 'space-between',
+        justifyContent:'center',
         gap: '10px',
-        m: { md: '25px 150px 20px 150px', xs: '25px 0 20px 30px' },
+        // m: { md: '25px 150px 20px 150px', xs: '25px 0 20px 30px' },
         zIndex: 1000
     },
     cardss: {
@@ -179,15 +179,15 @@ const styles = {
     button1: {
         width: '60px',
         height: '30px',
-        border: '1px solid #8C8C8C',
+        border: '1px solid #777777',
         background: 'transparent',
         ':hover': {
-            border: '1px solid #8C8C8C',
+            border: '1px solid #777777',
             background: 'transparent',
         },
         color: '#000',
         borderRadius: '10px',
-        fontSize: '10px'
+        fontSize: '10px',
     },
     loremblog: {
         fontSize: '20px',
